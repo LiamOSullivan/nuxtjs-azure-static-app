@@ -3,10 +3,14 @@
     "scripts": {
         "dev": "nuxt",
         "build": "nuxt generate",
+        "local": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate"
     },
     "dependencies": {
         "nuxt": "^2.15.8"
+    },
+    "devDependencies": {
+        "@azure/static-web-apps-cli": "^1.0.4"
     }
 }
