@@ -8,7 +8,7 @@
             ]
         },
         {
-            "route": "/about*",
+            "route": "/restricte*",
             "allowedRoles": [
                 "authenticated"
             ]
