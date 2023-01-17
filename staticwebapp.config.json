@@ -2,13 +2,31 @@
     "trailingSlash": "auto",
     "routes": [
         {
-            "route": "/",
+            "route": "/index.html",
             "allowedRoles": [
                 "anonymous"
             ]
         },
         {
-            "route": "/restricte*",
+            "route": "/restricted/index.html",
+            "allowedRoles": [
+                "authenticated"
+            ]
+        },
+        {
+            "route": "/admin/index.html",
+            "allowedRoles": [
+                "administrator"
+            ]
+        },
+        {
+            "route": "/project/index.html",
+            "allowedRoles": [
+                "project-a"
+            ]
+        },
+        {
+            "route": "/.auth/me/index.html",
             "allowedRoles": [
                 "authenticated"
             ]

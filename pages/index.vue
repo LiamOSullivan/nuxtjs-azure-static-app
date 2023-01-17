@@ -16,7 +16,16 @@
               <a href="/.auth/logout">Logout</a>
             </li>
             <li>
-              <a href="/restricted">Restricted page</a>
+              <a href="/restricted">Authorised page</a>
+            </li>
+            <li>
+              <a href="/admin">Admin Page</a>
+            </li>
+            <li>
+              <a href="/project">Project A</a>
+            </li>
+            <li>
+              <a href="/.auth/me">My Details</a>
             </li>
             <!-- <li>
               <NuxtLink to="/spa-fallback">Spa Fallback page</NuxtLink>
