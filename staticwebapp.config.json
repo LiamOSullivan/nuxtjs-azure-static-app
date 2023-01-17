@@ -22,7 +22,7 @@
         {
             "route": "/project/index.html",
             "allowedRoles": [
-                "project-a"
+                "project_a"
             ]
         },
         {
