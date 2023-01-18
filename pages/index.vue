@@ -29,6 +29,12 @@
               <a href="/projects">My Projects</a>
             </li>
             <li>
+              <a href="/unauthorised">Unauthorised</a>
+            </li>
+            <li>
+              <a href="/unauthorised-error">Unauthorised Error</a>
+            </li>
+            <li>
               <a href="/.auth/me">My Details</a>
             </li>
             <!-- <li>

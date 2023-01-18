@@ -32,6 +32,16 @@
             ]
         },
         {
+            "route": "/unauthorised/index.html",
+            "allowedRoles": [
+                "unauthorised"
+            ]
+        },
+        {
+            "route": "/unauthorised-error",
+            "statusCode": 403
+        },
+        {
             "route": "/.auth/me",
             "allowedRoles": [
                 "authenticated"
