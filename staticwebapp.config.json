@@ -61,7 +61,18 @@
             "/css/*"
         ]
     },
-    "responseOverrides": {},
+    "responseOverrides": {
+        "401": {
+            "redirect": "/login",
+            "statusCode": 302
+        },
+        "403": {
+            "rewrite": "/custom-forbidden-page.html"
+        }
+    },
+    "globalHeaders": {
+        "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
+    },
     "mimeTypes": {
         ".json": "text/json"
     }
