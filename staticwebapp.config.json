@@ -38,7 +38,7 @@
             ]
         },
         {
-            "route": "/unauthorised-error",
+            "route": "/unauthorised-error/index.html",
             "statusCode": 403
         },
         {
