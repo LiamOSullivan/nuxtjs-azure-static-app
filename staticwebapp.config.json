@@ -8,7 +8,13 @@
             ]
         },
         {
-            "route": "/restricted/index.html",
+            "route": "/public/index.html",
+            "allowedRoles": [
+                "anonymous"
+            ]
+        },
+        {
+            "route": "/authenticated/index.html",
             "allowedRoles": [
                 "authenticated"
             ]
@@ -20,19 +26,31 @@
             ]
         },
         {
-            "route": "/project/index.html",
+            "route": "/projects/index.html",
             "allowedRoles": [
-                "project_a"
+                "projects"
             ]
         },
         {
-            "route": "/.auth/me/index.html",
+            "route": "/.auth/me",
             "allowedRoles": [
                 "authenticated"
             ]
         },
         {
             "route": "/.auth/login/twitter",
+            "statusCode": 404
+        },
+        {
+            "route": "/.auth/login/google",
+            "statusCode": 404
+        },
+        {
+            "route": "/.auth/login/github",
+            "statusCode": 404
+        },
+        {
+            "route": "/.auth/login/facebook",
             "statusCode": 404
         }
     ],
@@ -43,24 +61,7 @@
             "/css/*"
         ]
     },
-    "responseOverrides": {
-        "400": {
-            "rewrite": "/invalid-invitation-error.html"
-        },
-        "401": {
-            "redirect": "/login",
-            "statusCode": 302
-        },
-        "403": {
-            "rewrite": "/custom-forbidden-page.html"
-        },
-        "404": {
-            "rewrite": "/404.html"
-        }
-    },
-    "globalHeaders": {
-        "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
-    },
+    "responseOverrides": {},
     "mimeTypes": {
         ".json": "text/json"
     }

@@ -1,9 +1,9 @@
 <template>
   <div>
     <div>
-      <div class="logos">
+      <!-- <div class="logos">
         <img src="Terrain-AI logo dark green.png" alt="Terrain-AI logo" />
-      </div>
+      </div> -->
       <h1 class="title">T-AI Auth Test Server</h1>
       <h2 class="subtitle">Click the links to follow the auth flow</h2>
       <div class="links">
@@ -16,13 +16,17 @@
               <a href="/.auth/logout">Logout</a>
             </li>
             <li>
-              <a href="/restricted">Authorised page</a>
+              <a href="/public">Public</a>
             </li>
             <li>
-              <a href="/admin">Admin Page</a>
+              <a href="/authenticated">Authenticated</a>
             </li>
             <li>
-              <a href="/project">Project A</a>
+              <!-- accessible to AAD users with administrator role??? -->
+              <a href="/admin">Admin</a>
+            </li>
+            <li>
+              <a href="/projects">My Projects</a>
             </li>
             <li>
               <a href="/.auth/me">My Details</a>
