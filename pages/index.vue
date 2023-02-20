@@ -26,7 +26,7 @@
               <a href="/admin">Admin</a>
             </li>
             <li>
-              <a href="/projects">My Projects</a>
+              <a href="/projects">Projects</a>
             </li>
             <li>
               <a href="/unauthorised">Unauthorised</a>
@@ -35,7 +35,7 @@
               <a href="/unauthorised-error">Unauthorised Error</a>
             </li>
             <li>
-              <a href="/.auth/me">My Details</a>
+              <a href="/.auth/me">Me</a>
             </li>
             <!-- <li>
               <NuxtLink to="/spa-fallback">Spa Fallback page</NuxtLink>
@@ -50,23 +50,35 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script lang="ts">
+export default {
+  components: {},
+  data: () => {
+    const data = {};
+    return data;
+  },
+  computed: {},
+  methods: {},
+  created() {},
+  mounted() {},
+};
 </script>
 
 <style scoped>
 .links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-top: 15px;
 }
 ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  margin-bottom: 72px;
   text-align: center;
   justify-content: center;
+  flex-flow: row wrap;
+  gap: 32px;
 }
 li {
   padding: 0 20px;
